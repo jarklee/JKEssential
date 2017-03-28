@@ -21,6 +21,7 @@
 		CF489BA21E8A0E0100CDF6EE /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF489B951E8A0E0100CDF6EE /* UIColor+Extensions.swift */; };
 		CF489BA31E8A0E0100CDF6EE /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF489B961E8A0E0100CDF6EE /* UITableView+Extensions.swift */; };
 		CF489BA41E8A0E0100CDF6EE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF489B971E8A0E0100CDF6EE /* UIView+Extensions.swift */; };
+		CF489BA81E8A176500CDF6EE /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF489BA71E8A176500CDF6EE /* UICollectionView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		CF489B951E8A0E0100CDF6EE /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		CF489B961E8A0E0100CDF6EE /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		CF489B971E8A0E0100CDF6EE /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CF489BA71E8A176500CDF6EE /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				CF489B951E8A0E0100CDF6EE /* UIColor+Extensions.swift */,
 				CF489B961E8A0E0100CDF6EE /* UITableView+Extensions.swift */,
 				CF489B971E8A0E0100CDF6EE /* UIView+Extensions.swift */,
+				CF489BA71E8A176500CDF6EE /* UICollectionView+Extensions.swift */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF489BA81E8A176500CDF6EE /* UICollectionView+Extensions.swift in Sources */,
 				CF489B9B1E8A0E0100CDF6EE /* JobResult.swift in Sources */,
 				CF489B9F1E8A0E0100CDF6EE /* SegueManager.swift in Sources */,
 				CF489B9A1E8A0E0100CDF6EE /* ImutableArray.swift in Sources */,
@@ -356,6 +360,7 @@
 				CF489B891E8A0D1400CDF6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
