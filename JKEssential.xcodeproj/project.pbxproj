@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF4799BF1E9A0539003A6A91 /* UIView+AnimateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4799BE1E9A0539003A6A91 /* UIView+AnimateExtensions.swift */; };
 		CF489B841E8A0D1400CDF6EE /* JKEssential.h in Headers */ = {isa = PBXBuildFile; fileRef = CF489B821E8A0D1400CDF6EE /* JKEssential.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF489B981E8A0E0100CDF6EE /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF489B8B1E8A0E0100CDF6EE /* Array+Extensions.swift */; };
 		CF489B991E8A0E0100CDF6EE /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF489B8C1E8A0E0100CDF6EE /* Error.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF4799BE1E9A0539003A6A91 /* UIView+AnimateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AnimateExtensions.swift"; sourceTree = "<group>"; };
 		CF489B7F1E8A0D1400CDF6EE /* JKEssential.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKEssential.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF489B821E8A0D1400CDF6EE /* JKEssential.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKEssential.h; sourceTree = "<group>"; };
 		CF489B831E8A0D1400CDF6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				CF489B951E8A0E0100CDF6EE /* UIColor+Extensions.swift */,
 				CF489B961E8A0E0100CDF6EE /* UITableView+Extensions.swift */,
 				CF489B971E8A0E0100CDF6EE /* UIView+Extensions.swift */,
+				CF4799BE1E9A0539003A6A91 /* UIView+AnimateExtensions.swift */,
 				CF489BA71E8A176500CDF6EE /* UICollectionView+Extensions.swift */,
 			);
 			path = Classes;
@@ -195,6 +198,7 @@
 				CF489B9D1E8A0E0100CDF6EE /* Number+Extensions.swift in Sources */,
 				CF489BA21E8A0E0100CDF6EE /* UIColor+Extensions.swift in Sources */,
 				CF489BA11E8A0E0100CDF6EE /* TimeSpan.swift in Sources */,
+				CF4799BF1E9A0539003A6A91 /* UIView+AnimateExtensions.swift in Sources */,
 				CF489B981E8A0E0100CDF6EE /* Array+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
