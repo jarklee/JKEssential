@@ -32,5 +32,6 @@ xcuserdata/
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
+*.playground/
 
 # End of https://www.gitignore.io/api/xcode

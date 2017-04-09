@@ -6,6 +6,7 @@
 //  Copyright © 2017 Trịnh Quân. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 private struct SourceLocation {

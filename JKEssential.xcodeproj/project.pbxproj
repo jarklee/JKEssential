@@ -44,6 +44,7 @@
 		CF489B961E8A0E0100CDF6EE /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		CF489B971E8A0E0100CDF6EE /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		CF489BA71E8A176500CDF6EE /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		CFB948191E9A2E2200304416 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 				CF489B8A1E8A0E0100CDF6EE /* Classes */,
 				CF489B821E8A0D1400CDF6EE /* JKEssential.h */,
 				CF489B831E8A0D1400CDF6EE /* Info.plist */,
+				CFB948191E9A2E2200304416 /* MyPlayground.playground */,
 			);
 			path = JKEssential;
 			sourceTree = "<group>";

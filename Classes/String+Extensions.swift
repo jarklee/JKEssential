@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public extension Character {
     
@@ -45,6 +46,14 @@ public extension String {
         return self.characters.count
     }
     
+    public var utf8Length: Int {
+        return self.utf8.count
+    }
+    
+    public var utf16Length: Int {
+        return self.utf16.count
+    }
+    
     public func htmlToText() -> String? {
         let scanner: Scanner = Scanner(string: self)
         var text: NSString? = ""
@@ -72,3 +81,105 @@ public extension String {
         self = self.capitalizingFirstLetter()
     }
 }
+
+extension String {
+    
+    public func chars() -> [String] {
+        return self.characters.map { "\($0)" }
+    }
+    
+    public func charsAppear() -> [String] {
+        var currentStr = ""
+        return self.chars().map{ char in
+            let newStr = "\(currentStr)\(char)"
+            currentStr = newStr
+            return newStr
+        }
+    }
+    
+    public func charsAnimation(_ represent: StringReprentable) -> AnimationCollection {
+        return String.toAnimations(represent, stringProducer: self.charsAppear)
+    }
+    
+    public func charsAnimation(_ charConsumer: @escaping (String) -> Void) -> AnimationCollection {
+        return String.toAnimations(charConsumer, stringProducer: self.charsAppear)
+    }
+    
+    public func words() -> [String] {
+        return self.components(separatedBy: " ")
+    }
+    
+    public func wordsAppear() -> [String] {
+        let words = self.words()
+        var currentWord = ""
+        return words.map { word in
+            let newLine = currentWord.utf8Length == 0 ? word : "\(currentWord) \(word)"
+            currentWord = newLine
+            return newLine
+        }
+    }
+    
+    public func wordsAnimation(_ represent: StringReprentable) -> AnimationCollection {
+        return String.toAnimations(represent, stringProducer: self.wordsAppear)
+    }
+    
+    public func wordsAnimation(_ wordConsumer: @escaping (String) -> Void) -> AnimationCollection {
+        return String.toAnimations(wordConsumer, stringProducer: self.wordsAppear)
+    }
+    
+    public static func toAnimations(_ represent: StringReprentable,
+                                    stringProducer: @escaping () -> [String]) -> AnimationCollection {
+        return toAnimations({ (str) in
+            represent.representText = str
+        }, stringProducer: stringProducer)
+    }
+    
+    public static func toAnimations(_ stringConsumer: @escaping (String) -> Void,
+                                    stringProducer: @escaping () -> [String]) -> AnimationCollection {
+        return stringProducer().map{ word -> AnimationBlock in
+            return {
+                stringConsumer(word)
+            }
+        }
+    }
+}
+
+public protocol StringReprentable: class {
+    var representText: String? {get set}
+}
+
+public protocol StringAssignable: StringReprentable {
+    
+    var text: String? {get set}
+}
+
+public extension StringAssignable {
+    
+    public var representText: String? {
+        get {
+            return self.text
+        }
+        set {
+            self.text = newValue
+        }
+    }
+}
+
+extension UILabel: StringAssignable {
+}
+
+extension UITextView: StringReprentable {
+    public var representText: String? {
+        get {
+            return self.text
+        }
+        set {
+            self.text = newValue
+        }
+    }
+}
+
+extension UITextField: StringAssignable {
+    
+}
+
