@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/jarklee/JKEssential.git", :tag => "0.0.8" }
+  s.source       = { :git => "https://github.com/jarklee/JKEssential.git", :tag => "0.0.9-1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
