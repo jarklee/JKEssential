@@ -11,23 +11,23 @@ import UIKit
 
 public extension UITableView {
     
-    public func registerCellClass(cellClass: AnyClass) {
+    @objc public func registerCellClass(cellClass: AnyClass) {
         let identifier = NSStringFromClass(cellClass).components(separatedBy: ".").last!
         self.register(cellClass, forCellReuseIdentifier: identifier)
     }
     
-    public func registerCellNib(cellClass: AnyClass) {
+    @objc public func registerCellNib(cellClass: AnyClass) {
         let identifier = NSStringFromClass(cellClass).components(separatedBy: ".").last!
         let nib = UINib(nibName: identifier, bundle: nil)
         self.register(nib, forCellReuseIdentifier: identifier)
     }
     
-    public func registerHeaderFooterViewClass(viewClass: AnyClass) {
+    @objc public func registerHeaderFooterViewClass(viewClass: AnyClass) {
         let identifier = NSStringFromClass(viewClass).components(separatedBy: ".").last!
         self.register(viewClass, forHeaderFooterViewReuseIdentifier: identifier)
     }
     
-    public func registerHeaderFooterViewNib(viewClass: AnyClass) {
+    @objc public func registerHeaderFooterViewNib(viewClass: AnyClass) {
         let identifier = NSStringFromClass(viewClass).components(separatedBy: ".").last!
         let nib = UINib(nibName: identifier, bundle: nil)
         self.register(nib, forHeaderFooterViewReuseIdentifier: identifier)

@@ -11,11 +11,11 @@ import UIKit
 
 public extension UIView {
     
-    public class func fromNib(_ name: String) -> UIView? {
+    @objc public class func fromNib(_ name: String) -> UIView? {
         return fromNib(name, owner: nil)
     }
     
-    public class func fromNib(_ name: String, owner: Any?, options: [AnyHashable : Any]? = nil) -> UIView? {
+    @objc public class func fromNib(_ name: String, owner: Any?, options: [AnyHashable : Any]? = nil) -> UIView? {
         return Bundle.main.loadNibNamed(name, owner: owner, options: options)?.first as? UIView
     }
 }

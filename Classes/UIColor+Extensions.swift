@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIColor{
     
-    public convenience init(rgb: UInt, alphaVal: UInt) {
+    @objc public convenience init(rgb: UInt, alphaVal: UInt) {
         self.init(
             red: CGFloat((rgb & 0xFF0000) >> 16) / 255.0,
             green: CGFloat((rgb & 0x00FF00) >> 8) / 255.0,
@@ -20,7 +20,7 @@ public extension UIColor{
         )
     }
     
-    public convenience init(rgb: UInt, alpha: Float = 1) {
+    @objc public convenience init(rgb: UInt, alpha: Float = 1) {
         self.init(
             red: CGFloat((rgb & 0xFF0000) >> 16) / 255.0,
             green: CGFloat((rgb & 0x00FF00) >> 8) / 255.0,
@@ -29,7 +29,7 @@ public extension UIColor{
         )
     }
     
-    public func add(overlay: UIColor) -> UIColor {
+    @objc public func add(overlay: UIColor) -> UIColor {
         var bgR: CGFloat = 0
         var bgG: CGFloat = 0
         var bgB: CGFloat = 0

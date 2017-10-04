@@ -82,6 +82,10 @@ public extension String {
     }
 }
 
+extension String: Mapable{
+    
+}
+
 extension String {
     
     public func chars() -> [String] {
@@ -169,7 +173,7 @@ extension UILabel: StringAssignable {
 }
 
 extension UITextView: StringReprentable {
-    public var representText: String? {
+    @objc public var representText: String? {
         get {
             return self.text
         }

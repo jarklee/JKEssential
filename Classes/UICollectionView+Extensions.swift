@@ -11,12 +11,12 @@ import UIKit
 
 public extension UICollectionView {
     
-    public func registerCellClass(cellClass: AnyClass) {
+    @objc public func registerCellClass(cellClass: AnyClass) {
         let identifier = NSStringFromClass(cellClass).components(separatedBy: ".").last!
         self.register(cellClass, forCellWithReuseIdentifier: identifier)
     }
     
-    public func registerCellNib(cellClass: AnyClass) {
+    @objc public func registerCellNib(cellClass: AnyClass) {
         let identifier = NSStringFromClass(cellClass).components(separatedBy: ".").last!
         let nib = UINib(nibName: identifier, bundle: Bundle.main)
         self.register(nib, forCellWithReuseIdentifier: identifier)

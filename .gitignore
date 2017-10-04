@@ -35,3 +35,5 @@ xcuserdata/
 *.playground/
 
 # End of https://www.gitignore.io/api/xcode
+.DS_Store
+*/.DS_Store

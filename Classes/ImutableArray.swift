@@ -9,7 +9,7 @@
 import Foundation
 
 public class ImmutableArray<T> {
-    typealias Element = T
+    public typealias Element = T
     
     fileprivate let internalArray: [T]
     public let count:Int
